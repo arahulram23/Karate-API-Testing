@@ -1,0 +1,336 @@
+17:01:01.662 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:01:04.145 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:01:04.753 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3000/posts/7b0d
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:01:04.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 75
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:31:04 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 62
+{
+  "id": "7b0d",
+  "title": "birthday wish",
+  "views": 123
+}
+
+17:01:04.906 [main] ERROR com.intuit.karate - classpath:features/delete.feature:7
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 75, url: http://localhost:3000/posts/7b0d, response: 
+{
+  "id": "7b0d",
+  "title": "birthday wish",
+  "views": 123
+}
+classpath:features/delete.feature:7
+17:01:05.942 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:01:05.953 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/posts/3638
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:01:05.963 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:31:05 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 62
+{
+  "id": "3638",
+  "title": "birthday wish",
+  "views": 123
+}
+
+17:01:06.235 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:01:06.365 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"birthday wish","views":123}
+
+17:01:06.394 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:31:06 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 62
+{
+  "id": "030f",
+  "title": "birthday wish",
+  "views": 123
+}
+
+17:01:06.583 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:01:06.590 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3000/posts/b329
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Hello, happy birthday","views":1231}
+
+17:01:06.607 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:31:06 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 71
+{
+  "title": "Hello, happy birthday",
+  "views": 1231,
+  "id": "b329"
+}
+
+17:05:41.938 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:05:44.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:05:44.540 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3000/posts/7b0d
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:05:44.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 56
+1 < 404
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: text/plain; charset=utf-8
+1 < etag: W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+1 < Date: Mon, 12 Feb 2024 11:35:44 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 9
+Not Found
+
+17:05:44.661 [main] ERROR com.intuit.karate - classpath:features/delete.feature:7
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 56, url: http://localhost:3000/posts/7b0d, response: 
+Not Found
+classpath:features/delete.feature:7
+17:05:45.636 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:05:45.648 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/posts/3638
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:05:45.658 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:35:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 62
+{
+  "id": "3638",
+  "title": "birthday wish",
+  "views": 123
+}
+
+17:05:45.991 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:05:46.103 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 36
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"How are you?","views":345}
+
+17:05:46.116 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:35:46 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 61
+{
+  "id": "6b42",
+  "title": "How are you?",
+  "views": 345
+}
+
+17:05:46.123 [main] ERROR com.intuit.karate - classpath:features/post.feature:9
+And match response == { id: '#notnull', title: 'birthday wish', views: 123 }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'title' (MAP:MAP)
+  {"id":"6b42","title":"How are you?","views":345}
+  {"id":"#notnull","title":"birthday wish","views":123}
+
+    $.title | not equal (STRING:STRING)
+    'How are you?'
+    'birthday wish'
+
+classpath:features/post.feature:9
+17:05:46.269 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:05:46.299 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3000/posts/b329
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Hello, happy Second birthday Jarvis","views":1231}
+
+17:05:46.320 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 11:35:46 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 85
+{
+  "title": "Hello, happy Second birthday Jarvis",
+  "views": 1231,
+  "id": "b329"
+}
+
+18:07:47.603 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:07:49.347 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:07:49.861 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3000/posts/7b0d
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:07:49.962 [main] DEBUG com.intuit.karate - response time in milliseconds: 98
+1 < 404
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: text/plain; charset=utf-8
+1 < etag: W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+1 < Date: Mon, 12 Feb 2024 12:37:49 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 9
+Not Found
+18:07:49.968 [main] ERROR com.intuit.karate - classpath:features/delete.feature:7
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 98, url: http://localhost:3000/posts/7b0d, response: 
+Not Found
+classpath:features/delete.feature:7
+18:07:51.063 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:07:51.071 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/posts/3638
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:07:51.087 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 12:37:51 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 62
+{"id":"3638","title":"birthday wish","views":123}
+18:07:51.310 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:07:51.409 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"How are you? Tony","views":345}
+
+18:07:51.456 [main] DEBUG com.intuit.karate - response time in milliseconds: 46
+1 < 201
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 12:37:51 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 66
+{"id":"1b57","title":"How are you? Tony","views":345}
+18:07:51.671 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:07:51.682 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3000/posts/b329
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Hello, happy Second birthday Jarvis","views":1231}
+
+18:07:51.706 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+1 < 200
+1 < X-Powered-By: tinyhttp
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+1 < Access-Control-Allow-Headers: content-type
+1 < Content-Type: application/json
+1 < Date: Mon, 12 Feb 2024 12:37:51 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+1 < Content-Length: 85
+{"id":"b329","title":"Hello, happy Second birthday Jarvis","views":1231}

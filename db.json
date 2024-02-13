@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3638",
+      "title": "birthday wish",
+      "views": 123
+    },
+    {
+      "title": "Hello, happy Second birthday Jarvis",
+      "views": 1231,
+      "id": "b329"
+    },
+    {
+      "id": "f71b",
+      "title": "birthday wish",
+      "views": 123
+    },
+    {
+      "id": "070c",
+      "title": "birthday wish",
+      "views": 123
+    },
+    {
+      "id": "030f",
+      "title": "birthday wish",
+      "views": 123
+    },
+    {
+      "id": "6b42",
+      "title": "How are you?",
+      "views": 345
+    },
+    {
+      "id": "1b57",
+      "title": "How are you? Tony",
+      "views": 345
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
